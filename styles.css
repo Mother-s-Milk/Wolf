@@ -1,0 +1,14 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  background-color: green;
+}
+
+a{
+  display: inline-block;
+  font-size: 2.5em;
+  color: #fff;
+}
