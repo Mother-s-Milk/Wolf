@@ -1,14 +1,294 @@
 *{
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body{
-  text-align: center;
-  background-color: green;
+	font-family: 'Quicksand', sans-serif;
 }
 
-a{
-  display: block;
-  font-size: 2.5em;
-  color: #fff;
+.container{
+	width: 100%;
+	min-width: 280px;
+	overflow: hidden;
+}
+
+/*MENU-RESPONSIVE*/
+.menu-responsive-container{
+	width: 100%;
+	height: 100vh;
+	display: block;
+	position: absolute;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .5);
+	background-image: url(img/background-nav.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+	transform: translateY(-100%);
+	transition: linear .7s;
+	z-index: 111;
+}
+
+.menu-responsive-container.show{
+	transform: translate(0);
+}
+
+.menu-responsive{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.menu-responsive-link{
+	font-family: 'Quicksand', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 1.8em;
+	letter-spacing: .1em;
+	margin: 0 auto;
+	padding: 5px 10px;
+	text-shadow: 0 0 5px #000;
+	border-radius: 30px;
+}
+
+.menu-responsive-link:active{
+	background-color: #ffcc00;
+}
+
+/*HEADER*/
+
+.header-container{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	text-align: center;
+	background-color: rgb(60, 30, 0);
+	/*background-color: #630;*/
+	/*background-color: rgb(0, 11, 56);*/
+}
+
+.header{
+	width: 100%;
+	height: 100%;
+}
+
+/*HEADER-NAV*/
+.nav-container{
+	width: 100%;
+}
+
+.nav{
+	width: 100%;
+	height: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-icon-menu{
+	margin-top: 1.3em;
+	margin-left: 1.2em;
+	z-index: 11111;
+	cursor: pointer;
+}
+
+.nav-icon-menu i{
+	color: #c7b446;
+	text-shadow: 0 0 3px #000;
+	font-size: 1.8em;
+	padding: 2px;
+}
+
+/*NAV-REDES*/
+.nav-redes{
+	margin-top: 1.3em;
+	margin-right: 1.2em;
+}
+
+.nav-redes a{
+	text-decoration: none;
+	display: block;
+	padding: 2px;
+}
+
+.nav-redes i{
+	color: #c7b446;
+	text-shadow: 0 0 3px #000;
+	font-size: 1.8em;
+}
+
+/*LOGO-HEADER-NAV*/
+.logo-header-container{
+	width: 100%;
+}
+
+.logo-header{
+	text-align: center;
+}
+
+/*HEADER-SLIDER*/
+
+.header-slider-container{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.slider-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.slider-content{
+	width: 100%;
+	text-align: center;
+	flex-shrink: 0;
+}
+
+/*ABOUT-US*/
+.about-us-container{
+	width: 100%;
+	height: auto;
+	background-image: url(img/article2.jpg);
+	background-color: rgba(0, 0, 0, .7);
+	background-blend-mode: darken;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.about-us-content{
+	width: 100%;
+	height: 100%;
+	padding: .6em;
+	text-align: center;
+}
+
+.about-us-tittle{
+	text-transform: uppercase;
+	font-size: 2.3em;
+	letter-spacing: .1em;
+	margin-bottom: .05em;
+	color: #fff;
+	text-shadow: 0 0 5px #000;
+}
+
+.about-us-content p{
+	font-size: 1em;
+	color: #fff;
+	text-shadow: 0 0 5px #000;
+	line-height: 1.4em;
+}
+
+/*BIRRAS-SECTION*/
+.beers-section-container{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+.beers-section-content{
+	width: 100%;
+	height: 100%;
+}
+
+.section-beers-tittle h2{
+	text-transform: uppercase;
+	font-size: 1.8em;
+	color: #ffcc00;
+}
+
+/*TARGETS-BEERS-CONTAINERS*/
+.target-beer-container{
+	/*background-color: rgb(150, 0, 12);*/
+	background-color: rgba(0, 0, 0, .5);
+	background-blend-mode: darken;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	min-width: 280px;
+}
+
+.target-beer{
+	width: 100%;
+	height: 100%;
+}
+
+/*NAME-BEER-AND-LOGO*/
+.name-beer-and-logo{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: .6em .6em 0;
+}
+
+.name-beer-and-logo-left{
+	justify-content: flex-start;
+}
+
+.name-beer-and-logo-right{	
+	justify-content: flex-end;
+}
+
+.name-beer{
+	font-size: 1.6em;
+	text-transform: uppercase;
+	color: #f4cea1;
+	text-shadow: 0 0 3px #175a4a, 0 0 5px #ee9c30;
+}
+
+/*INFO-BEER*/
+.info-beer{
+	color: #fff;
+	display: flex;
+	justify-content: space-around;
+	padding: .2em;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #555;
+	text-shadow: 0 0 3px #000;
+	background-color: #000;
+}
+
+.info-beer p{
+	font-size: .9em;
+	text-transform: uppercase;
+}
+
+/*BEER-DESCRIPTION*/
+.beer-description{
+	color: #fff;
+	font-size: .85em;
+	letter-spacing: .05em;
+	padding: .2em;
+	text-shadow: 0 0 3px #000;
+	background-color: #000;
+}
+
+/*TARGET-CONTAINER-1*/
+.target-beer-container-1{
+	background-image: url(img/lupulo-beer.png);
+}
+
+/*TARGET-CONTAINER-2*/
+.target-beer-container-2{
+	background-image: url(img/lupulo-skull.png);
+}
+
+/*TARGET-CONTAINER-3*/
+.target-beer-container-3{
+	background-image: url(img/lupulo-hip-hop.png);
+}
+
+/*TARGET-CONTAINER-4*/
+.target-beer-container-4{
+	background-image: url(img/lupulo-wizard.png);
 }
