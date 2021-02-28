@@ -22,7 +22,7 @@ body{
 	position: absolute;
 	text-align: center;
 	background-color: rgba(0, 0, 0, .5);
-	background-image: url(img/background-nav.jpeg);
+	background-image: url(background-nav.jpeg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -158,7 +158,7 @@ body{
 .about-us-container{
 	width: 100%;
 	height: auto;
-	background-image: url(img/article2.jpg);
+	background-image: url(article2.jpg);
 	background-color: rgba(0, 0, 0, .7);
 	background-blend-mode: darken;
 	background-size: cover;
@@ -275,20 +275,20 @@ body{
 
 /*TARGET-CONTAINER-1*/
 .target-beer-container-1{
-	background-image: url(img/lupulo-beer.png);
+	background-image: url(lupulo-beer.png);
 }
 
 /*TARGET-CONTAINER-2*/
 .target-beer-container-2{
-	background-image: url(img/lupulo-skull.png);
+	background-image: url(lupulo-skull.png);
 }
 
 /*TARGET-CONTAINER-3*/
 .target-beer-container-3{
-	background-image: url(img/lupulo-hip-hop.png);
+	background-image: url(lupulo-hip-hop.png);
 }
 
 /*TARGET-CONTAINER-4*/
 .target-beer-container-4{
-	background-image: url(img/lupulo-wizard.png);
+	background-image: url(lupulo-wizard.png);
 }
